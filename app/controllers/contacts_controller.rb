@@ -1,11 +1,11 @@
 class ContactsController < ApplicationController
   def one_contact
     @contact = Contact.first
-    render
+    render :show
   end
 
   def all_contacts
     @contacts = Contact.all
-    render
+    render :index
   end
 end
